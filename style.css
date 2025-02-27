@@ -1,0 +1,537 @@
+:root {
+    --classicRed: #e50a14;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    z-index: 100;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.7889) 8.333%, rgba(0, 0, 0, 0.7556) 16.67%, rgba(0, 0, 0, 0.7) 25%, rgba(0, 0, 0, 0.6222) 33.33%, rgba(0, 0, 0, 0.5222) 41.67%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.2778) 58.33%, rgba(0, 0, 0, 0.1778) 66.67%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.04444) 83.33%, rgba(0, 0, 0, 0.01111) 91.67%, rgba(0, 0, 0, 0) 100%);
+    width: 100%;
+    height: 100px;
+    padding: 40px 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    width: 150px;
+}
+
+.logo svg {
+    fill: var(--classicRed);
+}
+
+.btn {
+    background-color: var(--classicRed);
+    border: none;
+    color: white;
+    padding: 7px 17px;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
+.HeroSection {
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background-blend-mode: darken;
+    background: rgba(0, 0, 0, 0.67) url("./images/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+    padding: 200px 0 180px 0;
+}
+
+.HeroSection .content {
+    width: 600px;
+    margin: 32px;
+}
+
+.HeroSection .heading {
+    font-weight: 900;
+    font-size: 56px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.HeroSection .subHeading {
+    font-weight: 500;
+    font-size: 1.25rem;
+    letter-spacing: -0.03em;
+    text-align: center;
+}
+
+.HeroSection .memberShipLabel,
+.Email .label {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    margin: 25px 0 15px 0;
+}
+
+.divider {
+    z-index: 5;
+    width: 150%;
+    height: 75px;
+    position: absolute;
+    background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
+    bottom: 0;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+}
+
+.divider::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+    bottom: -4px;
+    left: 0;
+    border-top-left-radius: 50% 95%;
+    border-top-right-radius: 50% 95%;
+}
+
+.HeroSection form,
+.Email form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.Email form {
+    max-width: 800px;
+    margin: auto;
+}
+
+.HeroSection form .btn,
+.Email form .btn {
+    height: 60px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: -0.01rem;
+    padding: 0 30px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.HeroSection form input,
+.Email form input {
+    height: 60px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.01rem;
+    background-color: rgba(17, 17, 17, 0.87);
+    color: white;
+    border: 1px solid rgba(238, 238, 238, 0.33);
+    border-radius: 3px;
+    padding: 20px 15px;
+    outline: none;
+}
+
+.HeroSection form input::placeholder {
+    color: #fffb;
+}
+
+input:focus {
+    border-color: #fff;
+}
+
+.TrendingSection,
+.MoreReasons,
+.FAQs,
+.Email,
+footer {
+    background: black;
+    color: white;
+    padding-bottom: 50px;
+    overflow: hidden;
+    width: min(80vw, 1220px);
+    margin: auto;
+}
+
+.TrendingSection .heading,
+.MoreReasons .heading,
+.FAQs .heading {
+    width: 100%;
+    text-align: start;
+    font-size: 24px;
+    font-weight: 500;
+    margin: auto;
+}
+
+.TrendingSection .cards {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    overflow-x: scroll;
+    overflow-y: visible;
+    width: 100%;
+    color: white;
+    gap: 50px;
+    padding: 20px;
+    margin: auto;
+}
+
+.TrendingSection::-webkit-scrollbar,
+.TrendingSection .cards::-webkit-scrollbar,
+.MoreReasons .cards::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+.TrendingSection .card {
+    flex-shrink: 0;
+    width: max(120px, 16.5%);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+    transition: all 100ms ease-in-out;
+}
+
+.TrendingSection .card:hover {
+    transform: scale(1.03);
+}
+
+.TrendingSection .card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.TrendingSection .card .count {
+    font-size: 70px;
+    font-weight: bolder;
+    color: white;
+    position: absolute;
+    z-index: 6;
+    bottom: 0;
+    left: -30px;
+    text-shadow: 0 0 15px black;
+}
+
+.MoreReasons {
+    padding-top: 0;
+}
+
+.MoreReasons .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    overflow: hidden;
+    width: 100%;
+    color: white;
+    gap: 16px;
+    padding: 20px 0;
+    margin: auto;
+}
+
+.MoreReasons .card {
+    position: relative;
+    border-radius: 10px;
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+    color: white;
+    list-style: none;
+    overflow: hidden;
+    padding: 24px 16px 150px 16px;
+}
+
+.MoreReasons .card .title {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.MoreReasons .card .subtitle {
+    font-size: 16px;
+    margin-top: 16px;
+    color: #fffb;
+}
+
+.MoreReasons .card svg {
+    font-size: 14px;
+    color: #c5c5c5;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.FAQs {
+    padding-bottom: 20px;
+}
+
+.FAQs .questions {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.FAQs .question {
+    margin-bottom: 8px;
+}
+
+.FAQs .question .title {
+    position: relative;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 30px 20px;
+    background-color: #2d2d2d;
+    user-select: none;
+}
+
+.FAQs .question .title:hover {
+    background-color: #3d3d3d;
+}
+
+.FAQs .question .description {
+    font-size: 24px;
+    font-weight: 400;
+    padding: 0px 20px;
+    background-color: #2d2d2d;
+    border-top: 1px solid black;
+    height: 0px;
+    overflow: hidden;
+}
+
+.FAQs .question.expanded .description {
+    height: auto;
+    padding: 20px;
+}
+
+.FAQs .icon {
+    position: absolute;
+    right: 20px;
+    bottom: calc(50% - 15px);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.FAQs .icon .line1,
+.FAQs .icon .line2 {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+
+.FAQs .icon .line2 {
+    transform: rotateZ(90deg);
+}
+
+.FAQs .question.expanded .icon .line1 {
+    transform: rotateZ(-45deg);
+}
+
+.FAQs .question.expanded .icon .line2 {
+    transform: rotateZ(45deg);
+}
+
+.Email {
+    height: fit-content;
+}
+
+
+
+.Email .label {
+    margin: 20px auto;
+}
+
+footer {
+    color: #fffb;
+    padding-top: 75px;
+    padding-bottom: 90px;
+}
+
+footer .content {
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+}
+
+footer .ContactLink {
+    text-decoration: underline;
+    cursor: pointer;
+    width: 100%;
+    font-size: 15px;
+    text-align: start;
+}
+
+footer .cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 40px 5px;
+    flex-wrap: wrap;
+}
+
+footer .cards ul {
+    width: 200px;
+}
+
+footer li {
+    list-style: none;
+    text-decoration: underline;
+    font-size: 14px;
+    margin: 8px 0 0 0;
+    cursor: pointer;
+}
+
+footer button.English {
+    background: black;
+    border: none;
+    color: white;
+    border: 1px solid #777;
+    border-radius: 3px;
+    padding: 10px 20px;
+    margin-bottom: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+footer p {
+    font-size: 13px;
+}
+
+@media screen and (max-width: 1200px) {
+    header {
+        padding: 40px 100px;
+    }
+
+    .HeroSection .content {
+        width: 500px;
+    }
+
+    .HeroSection .heading {
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    .HeroSection form .btn,
+    .Email form .btn {
+        font-size: 18px;
+    }
+
+    .MoreReasons .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .MoreReasons .card {
+        padding: 24px 20px 100px 20px;
+    }
+
+    .MoreReasons .card .title {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    header {
+        padding: 40px 70px;
+    }
+
+    .HeroSection .content {
+        width: 450px;
+    }
+
+    .HeroSection .heading {
+        font-size: 32px;
+    }
+
+    .MoreReasons .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .MoreReasons .card {
+        padding: 24px 20px 100px 20px;
+    }
+
+    .MoreReasons .card .title {
+        font-size: 20px;
+    }
+
+    .TrendingSection,
+    .MoreReasons,
+    .FAQs,
+    .Email,
+    footer {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        padding: 30px;
+        height: 70px;
+    }
+
+    header .logo {
+        width: 80px;
+    }
+
+    .HeroSection {
+        padding: 150px 0 150px 0;
+        min-height: 65vh;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header .btn {
+        font-size: 12px;
+    }
+
+    .HeroSection .content {
+        width: 90%;
+    }
+
+    .divider {
+        height: 50px;
+    }
+
+    .HeroSection {
+        padding: 100px 0 180px 0;
+        min-height: 70vh;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .HeroSection form,
+    .Email form {
+        flex-wrap: wrap;
+    }
+}
