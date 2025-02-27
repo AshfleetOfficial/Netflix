@@ -119,8 +119,8 @@ header {
     border-top-right-radius: 50% 95%;
 }
 
-.HeroSection form,
-.Email form {
+.HeroSection .memberShipForm,
+.Email .memberShipForm {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,13 +128,13 @@ header {
     width: 100%;
 }
 
-.Email form {
+.Email .memberShipForm {
     max-width: 800px;
     margin: auto;
 }
 
-.HeroSection form .btn,
-.Email form .btn {
+.HeroSection .btn,
+.Email .btn {
     height: 60px;
     font-size: 1.5rem;
     font-weight: 500;
@@ -144,8 +144,8 @@ header {
     white-space: nowrap;
 }
 
-.HeroSection form input,
-.Email form input {
+.HeroSection input,
+.Email input {
     height: 60px;
     width: 100%;
     font-size: 16px;
@@ -159,7 +159,7 @@ header {
     outline: none;
 }
 
-.HeroSection form input::placeholder {
+.HeroSection input::placeholder {
     color: #fffb;
 }
 
@@ -441,8 +441,8 @@ footer p {
         font-weight: 700;
     }
 
-    .HeroSection form .btn,
-    .Email form .btn {
+    .HeroSection .memberShipForm .btn,
+    .Email .memberShipForm .btn {
         font-size: 18px;
     }
 
@@ -530,8 +530,8 @@ footer p {
 
 @media screen and (max-width: 500px) {
 
-    .HeroSection form,
-    .Email form {
+    .HeroSection .memberShipForm,
+    .Email .memberShipForm {
         flex-wrap: wrap;
     }
 }
