@@ -213,6 +213,7 @@ footer {
 .TrendingSection .card {
     flex-shrink: 0;
     width: max(120px, 16.5%);
+    aspect-ratio: 120 / 170;
     border-radius: 5px;
     color: white;
     cursor: pointer;
